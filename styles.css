@@ -402,16 +402,18 @@ button { font: inherit; }
 .caution { list-style: decimal; padding-left: 20px; display: grid; gap: 6px; }
 
 /* ───────── 푸터 ───────── */
-.footer { padding: 40px 0 112px; background: #2a1f1f; color: #d9cfcc; font-size: 14px; }
-.footer__inner { display: grid; gap: 20px; }
-.footer__brand { display: block; color: #fff; font-family: var(--serif); font-size: 18px; margin-bottom: 4px; }
-.footer__biz { display: grid; gap: 2px; margin-top: 8px; font-size: 13px; }
-.footer__biz > div { display: flex; flex-wrap: wrap; gap: 0 8px; }
-.footer__biz dt { color: #9d8f8c; }
-.footer__label { display: block; font-size: 13px; }
-.footer__tel { display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 800; color: #fff; text-decoration: none; }
-.footer__hours { margin-top: 4px; font-size: 13px; color: #b9aca9; }
-.footer__note { margin-top: 24px; font-size: 12px; color: #9d8f8c; }
+.footer { padding: 48px 0 112px; background: #2a1f1f; color: #d9cfcc; font-size: 14px; }
+.footer__inner { display: grid; gap: 28px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.footer__brand { display: inline-flex; align-items: center; gap: 8px; color: #fff; font-family: var(--serif); font-size: 20px; }
+.footer__brand em { font-style: italic; font-family: var(--display); font-size: 15px; font-weight: 500; letter-spacing: .12em; color: #b9aca9; }
+.footer__desc { margin-top: 8px; font-size: 13px; color: #b9aca9; }
+.footer__label { display: block; font-size: 13px; color: #b9aca9; }
+.footer__tel { display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 800; color: #fff; text-decoration: none; cursor: pointer; }
+.footer__tel::before { content: attr(data-tel-text); }
+.footer__hours { font-size: 13px; color: #b9aca9; }
+.footer__note { padding-top: 20px; font-size: 12px; line-height: 1.6; color: #9d8f8c; }
+.footer__note strong { color: #d9cfcc; font-weight: 600; }
+.footer__note a { color: inherit; text-underline-offset: 3px; }
 
 /* ───────── 모바일 하단 구매바 ───────── */
 .buybar {
@@ -447,7 +449,7 @@ button { font: inherit; }
   .marquee__track span { font-size: 64px; }
   .routine__title { font-size: 36px; }
   .review-list { grid-template-columns: repeat(2, 1fr); }
-  .footer__inner { grid-template-columns: 1fr auto; align-items: end; }
+  .footer__inner { grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
   .footer__cs { text-align: right; }
 }
 

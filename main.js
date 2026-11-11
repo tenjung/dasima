@@ -6,7 +6,7 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var hasIO = "IntersectionObserver" in window;
 
-  /* ── 구매 버튼: 자사몰 새 탭, 링크가 없으면 비활성화 ── */
+  /* ── 구매 버튼: 판매처 새 탭, 링크가 없으면 비활성화 ── */
   function withUtm(url) {
     if (!config.utm) return url;
     try {
@@ -35,6 +35,18 @@
     }
   });
 
+  /* ── 문의 전화: 번호를 CSS 가상 요소로만 그리고 tel: 링크는 누를 때 연다 ──
+     HTML 텍스트와 href에 번호가 남지 않아 검색엔진에 수집·노출되지 않는다. */
+  var tel = (config.contact && config.contact.tel) || "";
+  document.querySelectorAll("[data-tel]").forEach(function (el) {
+    if (!tel) { el.closest(".footer__cs").hidden = true; return; }
+    el.setAttribute("data-tel-text", tel);
+    el.tabIndex = 0;
+    var call = function () { window.location.href = "tel:" + tel.replace(/[^0-9+]/g, ""); };
+    el.addEventListener("click", call);
+    el.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); call(); } });
+  });
+
   /* ── 가격 ── */
   var won = function (n) { return n.toLocaleString("ko-KR") + "원"; };
   document.querySelectorAll("[data-price]").forEach(function (el) {
@@ -48,7 +60,7 @@
     } else if (p.salePrice || p.price) {
       el.innerHTML = '<strong class="price__now">' + won(p.salePrice || p.price) + "</strong>";
     } else {
-      el.innerHTML = '<span class="price__note">가격은 데이세븐몰에서 확인해 주세요</span>';
+      el.innerHTML = '<span class="price__note">가격은 공식 판매처 데이세븐에서 확인해 주세요</span>';
     }
   });
 
