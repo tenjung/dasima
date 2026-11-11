@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dasima-seven.vercel.app/sitemap.xml
+Sitemap: https://camellia.dayseven.co.kr/sitemap.xml

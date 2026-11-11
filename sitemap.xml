@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://dasima-seven.vercel.app/</loc>
+    <loc>https://camellia.dayseven.co.kr/</loc>
     <lastmod>2026-11-11</lastmod>
-    <image:image><image:loc>https://dasima-seven.vercel.app/images/cream-main.webp</image:loc></image:image>
-    <image:image><image:loc>https://dasima-seven.vercel.app/images/cream-model.webp</image:loc></image:image>
-    <image:image><image:loc>https://dasima-seven.vercel.app/images/oil-main.webp</image:loc></image:image>
+    <image:image><image:loc>https://camellia.dayseven.co.kr/images/cream-main.webp</image:loc></image:image>
+    <image:image><image:loc>https://camellia.dayseven.co.kr/images/cream-model.webp</image:loc></image:image>
+    <image:image><image:loc>https://camellia.dayseven.co.kr/images/oil-main.webp</image:loc></image:image>
   </url>
 </urlset>
