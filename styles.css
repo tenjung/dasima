@@ -253,7 +253,7 @@ button { font: inherit; }
   box-shadow: 0 24px 48px -36px color-mix(in srgb, var(--accent) 60%, black);
 }
 .step__img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 12px; margin-bottom: 18px; }
-.step__img--mood { aspect-ratio: 4 / 5; }
+.step__img--mood { object-position: 50% 78%; }
 .step__img--white { object-fit: contain; background: #fff; }
 .step__kicker { font-family: var(--display); font-style: italic; font-size: 15px; letter-spacing: .12em; color: var(--accent); }
 .step__title { margin-top: 6px; font-family: var(--serif); font-size: 24px; line-height: 1.4; }
@@ -435,7 +435,6 @@ button { font: inherit; }
   .line--accent { font-size: 140px; }
   .entries { gap: 20px; max-width: 760px; }
   .entry { padding: 22px 22px 24px; }
-  .entry__img { height: 200px; }
   .entry__verb { font-size: 24px; }
   .entry__name { font-size: 16px; }
   .cover__num { font-size: 220px; top: -90px; }
