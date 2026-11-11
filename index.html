@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf6f1" />
+  <title>청정 동백 — 동백다시마 앰플크림 · 천연 동백오일</title>
+  <meta name="description" content="여수 동백으로 만든 청정의 동백다시마 앰플크림(미백·주름개선 2중 기능성)과 동백나무씨오일 100% 천연 동백오일. 데이세븐에서 만나보세요." />
+  <meta property="og:title" content="겨울에 피는 꽃, 동백 — 청정 앰플크림 · 천연 동백오일" />
+  <meta property="og:description" content="크림으로 채우고, 오일로 감싸는 동백 보습 루틴." />
+  <meta property="og:image" content="images/cream-main.webp" />
+  <meta property="og:type" content="website" />
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="청정 동백 처음으로">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>청정 <em>CAMELLIA</em></span>
+      </a>
+      <nav class="topnav" aria-label="섹션 이동">
+        <a href="#routine">루틴</a>
+        <a href="#info">상품정보</a>
+      </nav>
+    </div>
+    <!-- 챕터 탭: 오프닝을 지나면 표시 -->
+    <nav class="chapter-nav" data-chapter-nav aria-label="제품 챕터">
+      <a class="chapter-nav__tab chapter-nav__tab--cream" href="#cream" data-chapter-tab="cream"><span>01</span>앰플크림</a>
+      <a class="chapter-nav__tab chapter-nav__tab--oil" href="#oil" data-chapter-tab="oil"><span>02</span>동백오일</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ───────── 오프닝 ───────── -->
+    <section class="opening" data-opening>
+      <div class="petals" data-petals aria-hidden="true"></div>
+
+      <!-- 동백 가지 일러스트 (오프닝 우측) -->
+      <svg class="branch" viewBox="0 0 640 860" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="g-petal" cx="50%" cy="100%" r="105%">
+            <stop offset="0" stop-color="#6e121a" />
+            <stop offset=".45" stop-color="#b3212b" />
+            <stop offset="1" stop-color="#e5525a" />
+          </radialGradient>
+          <radialGradient id="g-petal-in" cx="50%" cy="100%" r="100%">
+            <stop offset="0" stop-color="#5c0f16" />
+            <stop offset=".6" stop-color="#a11c26" />
+            <stop offset="1" stop-color="#d23c45" />
+          </radialGradient>
+          <linearGradient id="g-leaf" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4b7d52" />
+            <stop offset=".55" stop-color="#2c5234" />
+            <stop offset="1" stop-color="#1b3622" />
+          </linearGradient>
+          <path id="petal" d="M0 0 C -50 -16 -58 -92 0 -104 C 58 -92 50 -16 0 0 Z" />
+          <g id="leaf">
+            <path d="M0 0 C 36 -30 104 -30 142 0 C 104 30 36 30 0 0 Z" fill="url(#g-leaf)" />
+            <path d="M6 0 C 50 -3 96 -3 136 0" stroke="#9cc19f" stroke-width="1.6" fill="none" opacity=".5" />
+          </g>
+          <g id="flower">
+            <use href="#petal" fill="url(#g-petal)" />
+            <use href="#petal" fill="url(#g-petal)" transform="rotate(72)" />
+            <use href="#petal" fill="url(#g-petal)" transform="rotate(144)" />
+            <use href="#petal" fill="url(#g-petal)" transform="rotate(216)" />
+            <use href="#petal" fill="url(#g-petal)" transform="rotate(288)" />
+            <use href="#petal" fill="url(#g-petal-in)" transform="rotate(36) scale(.62)" />
+            <use href="#petal" fill="url(#g-petal-in)" transform="rotate(108) scale(.62)" />
+            <use href="#petal" fill="url(#g-petal-in)" transform="rotate(180) scale(.62)" />
+            <use href="#petal" fill="url(#g-petal-in)" transform="rotate(252) scale(.62)" />
+            <use href="#petal" fill="url(#g-petal-in)" transform="rotate(324) scale(.62)" />
+            <circle r="24" fill="#f3cf63" />
+            <circle r="15" fill="#e3a336" />
+            <g fill="#fbe29a">
+              <circle cx="0" cy="-21" r="3.2" /><circle cx="15" cy="-15" r="3.2" /><circle cx="21" cy="0" r="3.2" />
+              <circle cx="15" cy="15" r="3.2" /><circle cx="0" cy="21" r="3.2" /><circle cx="-15" cy="15" r="3.2" />
+              <circle cx="-21" cy="0" r="3.2" /><circle cx="-15" cy="-15" r="3.2" />
+            </g>
+          </g>
+        </defs>
+
+        <g class="branch__sway">
+          <!-- 가지 -->
+          <g fill="none" stroke="#4a3426" stroke-linecap="round">
+            <path d="M660 -10 C 560 110 500 210 448 330 C 404 430 352 500 270 580" stroke-width="10" />
+            <path d="M528 160 C 450 170 380 150 312 108" stroke-width="5.5" />
+            <path d="M440 352 C 506 410 540 486 556 600" stroke-width="5.5" />
+            <path d="M352 500 C 318 540 300 600 304 680" stroke-width="4" />
+          </g>
+
+          <!-- 잎 -->
+          <use href="#leaf" transform="translate(560 96) rotate(-160) scale(.9)" />
+          <use href="#leaf" transform="translate(470 172) rotate(-120) scale(.8)" />
+          <use href="#leaf" transform="translate(372 136) rotate(200) scale(.85)" />
+          <use href="#leaf" transform="translate(506 260) rotate(20) scale(1)" />
+          <use href="#leaf" transform="translate(452 330) rotate(150) scale(1.05)" />
+          <use href="#leaf" transform="translate(512 470) rotate(-40) scale(.9)" />
+          <use href="#leaf" transform="translate(556 560) rotate(60) scale(.8)" />
+          <use href="#leaf" transform="translate(372 470) rotate(170) scale(.9)" />
+          <use href="#leaf" transform="translate(300 560) rotate(120) scale(.8)" />
+          <use href="#leaf" transform="translate(308 650) rotate(40) scale(.7)" />
+
+          <!-- 꽃 -->
+          <g transform="translate(300 104) scale(.78)"><g class="bloom" style="--bd:.5s"><use href="#flower" /></g></g>
+          <g transform="translate(432 352) scale(1.08)"><g class="bloom" style="--bd:.8s"><use href="#flower" /></g></g>
+          <g transform="translate(266 584) scale(.86)"><g class="bloom" style="--bd:1.1s"><use href="#flower" /></g></g>
+          <g transform="translate(560 612) scale(.5)"><g class="bloom" style="--bd:1.4s"><use href="#flower" /></g></g>
+        </g>
+      </svg>
+      <div class="wrap opening__inner">
+        <p class="opening__eyebrow line"><span>YEOSU CAMELLIA · CHUNGJUNG</span></p>
+        <h1 class="opening__title">
+          <span class="line"><span>겨울에 피는 꽃,</span></span>
+          <span class="line line--accent"><span>동백</span></span>
+        </h1>
+        <p class="opening__lead line"><span>여수의 바닷바람을 견딘 생기를 피부에</span></p>
+      </div>
+
+      <div class="wrap entries">
+        <a class="entry entry--cream" href="#cream">
+          <span class="entry__chapter">Chapter 01</span>
+          <span class="entry__verb">채우는 크림</span>
+          <img class="entry__img" src="images/cream-main.webp" alt="청정 동백다시마 앰플크림 튜브와 패키지" width="1200" height="1200" />
+          <span class="entry__name">동백다시마 앰플크림 <small>100g · 미백·주름개선 2중 기능성</small></span>
+          <span class="entry__go" aria-hidden="true">→</span>
+        </a>
+        <a class="entry entry--oil" href="#oil">
+          <span class="entry__chapter">Chapter 02</span>
+          <span class="entry__verb">감싸는 오일</span>
+          <img class="entry__img" src="images/oil-main.webp" alt="청정 천연 동백오일 병과 패키지" width="1200" height="1200" />
+          <span class="entry__name">천연 동백오일 <small>30ml · 동백나무씨오일 100%</small></span>
+          <span class="entry__go" aria-hidden="true">→</span>
+        </a>
+      </div>
+      <a class="scroll-cue" href="#cream" aria-label="아래로 스크롤"><span></span></a>
+    </section>
+
+    <!-- ───────── CHAPTER 01 · 앰플크림 ───────── -->
+    <section class="chapter chapter--cream" id="cream" data-chapter="cream" aria-labelledby="cream-title">
+      <div class="wrap">
+        <header class="cover">
+          <span class="cover__num" aria-hidden="true">01</span>
+          <p class="cover__label reveal">Chapter 01 · Ampoule Cream</p>
+          <h2 class="cover__title reveal" id="cream-title">미백과 주름개선,<br />한 통으로 같이</h2>
+          <p class="cover__sub reveal">식약처 기능성 2가지를 담은 <strong>청정 동백다시마 앰플크림</strong></p>
+        </header>
+
+        <ul class="stats">
+          <li class="reveal"><strong><span data-count="2">2</span>중</strong><span>미백 · 주름개선 기능성</span></li>
+          <li class="reveal"><strong><span data-count="20000">20,000</span><small>ppm</small></strong><span>카멜리아씨오일 함유</span></li>
+          <li class="reveal"><strong><span data-count="6">6</span>가지</strong><span>식물 · 보습 핵심 성분</span></li>
+        </ul>
+
+        <div class="showcase" data-showcase>
+          <div class="showcase__visual" aria-hidden="true">
+            <img src="images/cream-main.webp" alt="" data-visual="0" class="is-active" width="1200" height="1200" />
+            <img src="images/cream-texture.webp" alt="" data-visual="1" width="1200" height="1200" loading="lazy" />
+            <div class="visual-compose" data-visual="2">
+              <img src="images/cream-stone.webp" alt="" width="1200" height="1200" loading="lazy" />
+              <span class="chip chip--a">미백 기능성</span>
+              <span class="chip chip--b">주름개선 기능성</span>
+            </div>
+          </div>
+          <div class="showcase__steps">
+            <article class="step" data-step="0">
+              <img class="step__img" src="images/cream-main.webp" alt="청정 동백다시마 앰플크림 튜브와 패키지" width="1200" height="1200" loading="lazy" />
+              <p class="step__kicker">01 · PRODUCT</p>
+              <h3 class="step__title">동백의 생기와<br />다시마의 수분을 한 통에</h3>
+              <p class="step__text">카멜리아씨오일, 동백나무꽃, 다시마 추출물을 담아 피부를 촉촉하고 편안하게 가꿔주는 앰플 크림입니다.</p>
+              <dl class="spec">
+                <div><dt>용량</dt><dd>100g / 3.52oz</dd></div>
+                <div><dt>피부 타입</dt><dd>모든 피부</dd></div>
+                <div><dt>기능성</dt><dd>미백 · 주름개선</dd></div>
+              </dl>
+              <div class="price" data-price="cream"></div>
+              <a class="btn btn--primary btn--block" data-buy="cream">앰플크림 구매하기</a>
+            </article>
+
+            <article class="step" data-step="1">
+              <img class="step__img" src="images/cream-texture.webp" alt="동백꽃과 크림 제형 옆에 놓인 앰플크림 튜브" width="1200" height="1200" loading="lazy" />
+              <p class="step__kicker">02 · TEXTURE</p>
+              <h3 class="step__title">바르는 순간,<br />촉촉하게 환해지는 결</h3>
+              <ul class="mini-list">
+                <li><span class="mini-list__no">01</span><div><strong>부드러운 크림 제형</strong><span>피부에 밀착되며 산뜻하게 스며듭니다</span></div></li>
+                <li><span class="mini-list__no">02</span><div><strong>자연스러운 톤업감</strong><span>환한 피부 표현에 도움을 줍니다</span></div></li>
+                <li><span class="mini-list__no">03</span><div><strong>촉촉한 보습 마무리</strong><span>보습감이 오래 머무는 마무리</span></div></li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="2">
+              <img class="step__img" src="images/cream-stone.webp" alt="돌 받침 위에 놓인 앰플크림 튜브" width="1200" height="1200" loading="lazy" />
+              <p class="step__kicker">03 · FUNCTION</p>
+              <h3 class="step__title">두 가지 고민을<br />하나의 루틴으로</h3>
+              <div class="func">
+                <div class="func__item">
+                  <span class="func__tag">미백 기능성</span>
+                  <strong>나이아신아마이드</strong>
+                  <p>피부 톤을 맑고 균일하게, 피부 미백에 도움</p>
+                </div>
+                <div class="func__item">
+                  <span class="func__tag">주름개선 기능성</span>
+                  <strong>아데노신</strong>
+                  <p>피부의 주름 개선에 도움</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="ingredients">
+          <h3 class="block-title reveal">동백과 바다, <br class="br-mob" />6가지 핵심 성분</h3>
+          <p class="block-note reveal">성분 설명은 원료 특성에 한합니다.</p>
+          <ul class="ing-rail" data-rail>
+            <li><img src="images/ing-camellia-oil.webp" alt="" width="86" height="86" loading="lazy" /><strong>카멜리아씨오일</strong><span>20,000ppm · 보습과 윤기</span></li>
+            <li><img src="images/ing-camellia-flower.webp" alt="" width="86" height="86" loading="lazy" /><strong>동백나무꽃추출물</strong><span>피부를 부드럽게</span></li>
+            <li><img src="images/ing-dasima.webp" alt="" width="86" height="86" loading="lazy" /><strong>다시마추출물</strong><span>수분감 케어</span></li>
+            <li><img src="images/ing-centella.webp" alt="" width="86" height="86" loading="lazy" /><strong>병풀추출물</strong><span>민감해진 피부 진정</span></li>
+            <li><img src="images/ing-chlorella.webp" alt="" width="86" height="86" loading="lazy" /><strong>클로렐라추출물</strong><span>피부 컨디션 케어</span></li>
+            <li><img src="images/ing-squalane.webp" alt="" width="86" height="86" loading="lazy" /><strong>스쿠알란 · 알란토인</strong><span>촉촉한 보습과 진정</span></li>
+          </ul>
+        </div>
+
+        <div class="cta-band reveal">
+          <img class="cta-band__img" src="images/cream-hands.webp" alt="두 손으로 든 앰플크림 튜브와 패키지" width="880" height="880" loading="lazy" />
+          <p class="cta-band__hook">칙칙하고 건조한<br class="br-mob" /> 피부가 고민이라면</p>
+          <p class="cta-band__name">동백다시마 앰플크림 <span>100g</span></p>
+          <a class="btn btn--primary" data-buy="cream">앰플크림 구매하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── 챕터 전환 ───────── -->
+    <div class="interlude" aria-hidden="true">
+      <div class="marquee"><div class="marquee__track">
+        <span>Camellia</span><i>✿</i><span>Fill with Cream</span><i>✿</i><span>Wrap with Oil</span><i>✿</i><span>Yeosu</span><i>✿</i>
+        <span>Camellia</span><i>✿</i><span>Fill with Cream</span><i>✿</i><span>Wrap with Oil</span><i>✿</i><span>Yeosu</span><i>✿</i>
+      </div></div>
+    </div>
+
+    <!-- ───────── CHAPTER 02 · 동백오일 ───────── -->
+    <section class="chapter chapter--oil" id="oil" data-chapter="oil" aria-labelledby="oil-title">
+      <div class="wrap">
+        <header class="cover">
+          <span class="cover__num" aria-hidden="true">02</span>
+          <p class="cover__label reveal">Chapter 02 · Camellia Oil</p>
+          <h2 class="cover__title reveal" id="oil-title">섞지 않았습니다.<br />동백씨 오일 100%</h2>
+          <p class="cover__sub reveal">원료는 단 하나, 동백나무씨오일 — <strong>청정 천연 동백오일</strong></p>
+        </header>
+
+        <ul class="stats">
+          <li class="reveal"><strong><span data-count="100">100</span>%</strong><span>동백나무씨오일</span></li>
+          <li class="reveal"><strong><span data-count="1">1</span>가지</strong><span>단일 원료 처방</span></li>
+          <li class="reveal"><strong><span data-count="3">3</span>곳</strong><span>얼굴 · 바디 · 헤어</span></li>
+        </ul>
+
+        <div class="showcase showcase--right" data-showcase>
+          <div class="showcase__visual" aria-hidden="true">
+            <img src="images/oil-mood.webp" alt="" data-visual="0" class="is-active" width="747" height="950" loading="lazy" />
+            <img src="images/oil-hand.webp" alt="" data-visual="1" width="1000" height="1000" loading="lazy" />
+            <img src="images/oil-set.webp" alt="" data-visual="2" class="is-white" width="1000" height="1000" loading="lazy" />
+          </div>
+          <div class="showcase__steps">
+            <article class="step" data-step="0">
+              <img class="step__img step__img--mood" src="images/oil-mood.webp" alt="동백꽃 옆 테이블 위에 놓인 천연 동백오일 패키지와 병" width="747" height="950" loading="lazy" />
+              <p class="step__kicker">01 · PRODUCT</p>
+              <h3 class="step__title">동백나무씨에서 얻은<br />오일 한 가지만</h3>
+              <p class="step__text">향료도, 다른 오일도 섞지 않았습니다. 동백씨 오일 그대로의 보습감을 얼굴과 몸, 머리까지 담아보세요.</p>
+              <dl class="spec">
+                <div><dt>용량</dt><dd>30ml / 1.01 fl.oz</dd></div>
+                <div><dt>전성분</dt><dd>동백나무씨오일 100%</dd></div>
+                <div><dt>제조국</dt><dd>대한민국</dd></div>
+              </dl>
+              <div class="price" data-price="oil"></div>
+              <a class="btn btn--primary btn--block" data-buy="oil">동백오일 구매하기</a>
+            </article>
+
+            <article class="step" data-step="1">
+              <img class="step__img" src="images/oil-hand.webp" alt="손에 든 천연 동백오일 30ml 병" width="1000" height="1000" loading="lazy" />
+              <p class="step__kicker">02 · HOW TO USE</p>
+              <h3 class="step__title">한 방울이면<br />충분한 윤기</h3>
+              <ol class="use-list">
+                <li><span>01</span><div><strong>얼굴 · 바디</strong><p>얼굴, 팔다리, 발꿈치처럼 건조한 부위에</p></div></li>
+                <li><span>02</span><div><strong>손 · 손발톱</strong><p>거칠어지기 쉬운 손끝과 손발톱 주변에</p></div></li>
+                <li><span>03</span><div><strong>모발 · 두피</strong><p>샴푸 후 모발 끝에 적당량, 또는 두피 마사지</p></div></li>
+              </ol>
+            </article>
+
+            <article class="step" data-step="2">
+              <img class="step__img step__img--white" src="images/oil-set.webp" alt="천연 동백오일 패키지와 병 두 개" width="1000" height="1000" loading="lazy" />
+              <p class="step__kicker">03 · CRAFT</p>
+              <h3 class="step__title">작게, 정직하게<br />만듭니다</h3>
+              <ul class="craft">
+                <li><strong>소량 주문생산</strong><span>필요한 만큼 만들어 신선하게 보내드립니다</span></li>
+                <li><strong>단일 원료 처방</strong><span>Camellia Japonica Seed Oil 100%</span></li>
+                <li class="craft__cert">
+                  <img src="images/iso-badge.webp" alt="ISO 22716:2007 인증 마크" width="270" height="330" loading="lazy" />
+                  <div><strong>ISO 22716 인증 제조사 생산</strong><span>국제 화장품 GMP 기준으로 품질과 안전을 관리합니다 · 2013 중소기업 품질경영 대상</span></div>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="cta-band reveal">
+          <img class="cta-band__img" src="images/oil-main.webp" alt="천연 동백오일 패키지와 병" width="1200" height="1200" loading="lazy" />
+          <p class="cta-band__hook">건조한 손끝부터<br class="br-mob" /> 머리끝까지, 한 병으로</p>
+          <p class="cta-band__name">천연 동백오일 <span>30ml</span></p>
+          <a class="btn btn--primary" data-buy="oil">동백오일 구매하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── 루틴 (두 제품) ───────── -->
+    <section class="routine" id="routine" data-chapter="none">
+      <div class="wrap">
+        <p class="routine__label reveal">Daily Routine</p>
+        <h2 class="routine__title reveal">크림으로 채우고,<br class="br-mob" /> 오일로 감싸고</h2>
+        <p class="routine__sub reveal">동백 2종으로 완성하는 보습 루틴</p>
+        <ol class="routine__steps">
+          <li class="routine-card routine-card--cream reveal">
+            <span class="routine-card__no">Step 1</span>
+            <img src="images/cream-main.webp" alt="" width="1200" height="1200" loading="lazy" />
+            <strong>앰플크림으로 채우기</strong>
+            <p>세안 후 토너로 정돈하고, 적당량을 얼굴 전체에 부드럽게 펴 바릅니다.</p>
+            <a class="btn btn--sm" data-buy="cream">앰플크림 구매</a>
+          </li>
+          <li class="routine__plus" aria-hidden="true">+</li>
+          <li class="routine-card routine-card--oil reveal">
+            <span class="routine-card__no">Step 2</span>
+            <img src="images/oil-main.webp" alt="" width="1200" height="1200" loading="lazy" />
+            <strong>동백오일로 감싸기</strong>
+            <p>건조한 부위에 1~2방울을 눌러 바르거나, 크림에 섞어 사용하세요.</p>
+            <a class="btn btn--sm" data-buy="oil">동백오일 구매</a>
+          </li>
+        </ol>
+        <p class="routine__gift reveal">부모님, 지인 선물로도 좋은 동백 2종</p>
+      </div>
+    </section>
+
+    <!-- 후기: config.js의 reviews에 실제 후기가 있을 때만 표시 -->
+    <section class="reviews" id="reviews" hidden>
+      <div class="wrap">
+        <p class="routine__label">Review</p>
+        <h2 class="routine__title">먼저 써 본 분들의 이야기</h2>
+        <ul class="review-list" data-review-list></ul>
+      </div>
+    </section>
+
+    <!-- ───────── 상품정보 ───────── -->
+    <section class="info" id="info" data-chapter="none">
+      <div class="wrap wrap--narrow">
+        <p class="routine__label">Information</p>
+        <h2 class="routine__title">상품 정보</h2>
+
+        <div class="tabs" role="tablist" aria-label="상품 선택">
+          <button class="tabs__btn tabs__btn--cream" role="tab" id="tab-cream" aria-controls="panel-cream" aria-selected="true">01 앰플크림</button>
+          <button class="tabs__btn tabs__btn--oil" role="tab" id="tab-oil" aria-controls="panel-oil" aria-selected="false" tabindex="-1">02 동백오일</button>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-cream" aria-labelledby="tab-cream">
+          <div class="accordion">
+            <details open>
+              <summary>상품 정보</summary>
+              <table class="info-table">
+                <tbody>
+                  <tr><th scope="row">제품명</th><td>청정 동백다시마 앰플크림</td></tr>
+                  <tr><th scope="row">용량</th><td>100g / 3.52oz</td></tr>
+                  <tr><th scope="row">기능성</th><td>미백 · 주름개선 2중 기능성 화장품</td></tr>
+                  <tr><th scope="row">피부 타입</th><td>모든 피부</td></tr>
+                  <tr><th scope="row">제조국</th><td>대한민국</td></tr>
+                  <tr><th scope="row">사용기한</th><td>제품 패키지에 별도 표기</td></tr>
+                </tbody>
+              </table>
+            </details>
+            <details>
+              <summary>전성분</summary>
+              <p class="ingredients-text">정제수, 글리세린, 미네랄오일, 카프릴릭/카프릭트라이글리세라이드, 프로필렌글라이콜, 나이아신아마이드, 카멜리아씨오일(20,000ppm), 세테아릴알코올, 폴리솔베이트60, 팔미틱애씨드, 스테아릭애씨드, 글리세릴스테아레이트, 다이메티콘, 스쿠알란, 페녹시에탄올, 피이지-100스테아레이트, 솔비탄세스퀴올리에이트, 파라핀, 하이드로제네이티드C12-18트라이글리세라이드, 마이크로크리스탈린왁스, 카보머, 트라이에탄올아민, 세라알마, 알란토인, 아데노신, 다이소듐이디티에이, 다이프로필렌글라이콜, 토코페릴아세테이트, 부틸렌글라이콜, 1,2-헥산다이올, 황색4호, 녹차추출물, 병풀추출물, 다시마추출물(2ppm), 동백나무꽃추출물(2ppm), 클로렐라불가리스추출물, 청색1호, 향료, 리모넨, 벤질벤조에이트</p>
+            </details>
+            <details>
+              <summary>사용 시 주의사항</summary>
+              <ol class="caution">
+                <li>사용 시 또는 사용 후 직사광선에 의하여 사용 부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것</li>
+                <li>상처가 있는 부위 등에는 사용을 자제할 것</li>
+                <li>어린이의 손이 닿지 않는 곳에 보관할 것</li>
+                <li>직사광선을 피해서 보관할 것</li>
+              </ol>
+            </details>
+          </div>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-oil" aria-labelledby="tab-oil" hidden>
+          <div class="accordion">
+            <details open>
+              <summary>상품 정보</summary>
+              <table class="info-table">
+                <tbody>
+                  <tr><th scope="row">제품명</th><td>청정 천연동백오일</td></tr>
+                  <tr><th scope="row">용량</th><td>30ml / 1.01 fl.oz</td></tr>
+                  <tr><th scope="row">전성분</th><td>동백나무씨오일 100%</td></tr>
+                  <tr><th scope="row">사용기한</th><td>제품 패키지에 별도 표기</td></tr>
+                  <tr><th scope="row">제조국</th><td>대한민국</td></tr>
+                  <tr><th scope="row">화장품 제조업자</th><td>(주)이노보떼 · 인천시 남동구 남동서로144번길 42</td></tr>
+                  <tr><th scope="row">화장품책임판매업자</th><td>(주)한국자이화장품 · 서울시 강서구 국회대로 151<br />(주)청정 · 전라남도 여수시</td></tr>
+                  <tr><th scope="row">사용방법</th><td>세안 후 물기를 닦고 적당량을 손에 덜어 원하는 부위에 골고루 바릅니다.</td></tr>
+                </tbody>
+              </table>
+            </details>
+            <details>
+              <summary>사용 시 주의사항</summary>
+              <ol class="caution">
+                <li>화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것</li>
+                <li>상처가 있는 부위 등에는 사용을 자제할 것</li>
+                <li>어린이의 손이 닿지 않는 곳에 보관할 것</li>
+                <li>직사광선을 피해서 보관할 것</li>
+              </ol>
+            </details>
+          </div>
+        </div>
+
+        <h3 class="faq-title">자주 묻는 질문</h3>
+        <div class="accordion">
+          <details>
+            <summary>Q. 크림과 오일을 같이 써도 되나요?</summary>
+            <p>네. 크림을 먼저 바른 뒤 오일 1~2방울을 덧바르거나, 손바닥에서 크림과 오일을 섞어 바르면 보습감이 더 오래 유지됩니다.</p>
+          </details>
+          <details>
+            <summary>Q. 동백오일은 머리에도 쓸 수 있나요?</summary>
+            <p>샴푸 후 물기를 가볍게 말린 모발 끝에 적당량을 바르거나, 두피 마사지에 사용할 수 있습니다. 양이 많으면 무거워 보일 수 있으니 조금씩 늘려 주세요.</p>
+          </details>
+          <details>
+            <summary>Q. 교환 · 환불은 어떻게 하나요?</summary>
+            <p>제품에 이상이 있는 경우 공정거래위원회 고시 '소비자 분쟁 해결기준'에 따라 보상해 드립니다. 데이세븐 고객센터(010-3640-5453, 평일 10:00~18:00)로 문의해 주세요.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <strong class="footer__brand">DAYSEVEN 데이세븐</strong>
+        <dl class="footer__biz">
+          <div><dt>대표</dt><dd>신지호</dd></div>
+          <div><dt>사업자등록번호</dt><dd>113-23-06352</dd></div>
+          <div><dt>통신판매업 신고</dt><dd>2020-서울구로-2189</dd></div>
+          <div><dt>주소</dt><dd>경기 부천시 양지로 229 골든IT타워 824호</dd></div>
+          <div><dt>이메일</dt><dd>doriclan@naver.com</dd></div>
+        </dl>
+      </div>
+      <div class="footer__cs">
+        <span class="footer__label">고객센터 (주문 · 배송 · 교환 · 반품)</span>
+        <a class="footer__tel" href="tel:01036405453">010-3640-5453</a>
+        <p class="footer__hours">평일 10:00 ~ 18:00 · 점심 12:00 ~ 13:00<br />토 · 일 · 공휴일 휴무</p>
+      </div>
+    </div>
+    <p class="wrap footer__note">판매: 데이세븐 · 제조/책임판매: (주)청정 외 (상세는 상품 정보 참고)<br />구매하기 버튼을 누르면 데이세븐 자사몰 상품 페이지로 이동합니다.</p>
+  </footer>
+
+  <!-- 모바일 하단 구매 바 -->
+  <div class="buybar" data-buybar aria-label="빠른 구매">
+    <a class="btn btn--cream" data-buy="cream">앰플크림 구매</a>
+    <a class="btn btn--oil" data-buy="oil">동백오일 구매</a>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
